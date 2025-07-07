@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to github</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card.twitter .card-icon {
+            color: #1DA1F2; /* Twitter Blue */
+        }
+
+        .card.instagram .card-icon {
+            color: #E4405F; /* Instagram Red/Pink */
+        }
+
+        .card.youtube .card-icon {
+            color: #FF0000; /* YouTube Red */
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            flex-grow: 1; /* Allows description to take up available space */
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card.twitter .read-more-btn {
+            background-color: #000; /* Black for contrast as in image */
+            color: #fff;
+        }
+
+        .card.twitter .read-more-btn:hover {
+            background-color: #333;
+        }
+
+        .card.instagram .read-more-btn {
+            background-color: #E4405F;
+            color: #fff;
+        }
+
+        .card.instagram .read-more-btn:hover {
+            background-color: #d82b4a;
+        }
+
+        .card.youtube .read-more-btn {
+            background-color: #000; /* Black for contrast as in image */
+            color: #fff;
+        }
+
+        .card.youtube .read-more-btn:hover {
+            background-color: #333;
+        }
+
+        /* Adjustments for the specific colors from the image */
+        .card.twitter {
+            border: 1px solid #ddd; /* Light border as seen in the image */
+        }
+
+        .card.instagram {
+            background-color: #E4405F; /* Pink background for Instagram */
+            color: #fff; /* White text for Instagram card */
+        }
+        .card.instagram .card-icon,
+        .card.instagram .card-title,
+        .card.instagram .card-description {
+            color: #fff; /* Ensure all text within Instagram card is white */
+        }
+        .card.instagram .read-more-btn {
+            background-color: #fff; /* White button for Instagram */
+            color: #E4405F; /* Pink text for Instagram button */
+        }
+        .card.instagram .read-more-btn:hover {
+             background-color: #f0f0f0;
+        }
+
+        .card.youtube {
+             border: 1px solid #ddd; /* Light border as seen in the image */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                width: 80%; /* Make cards take more width on smaller screens */
+            }
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 95%; /* Even wider on very small screens */
+                padding: 20px;
+            }
+            .card-icon {
+                font-size: 40px;
+            }
+            .card-title {
+                font-size: 20px;
+            }
+            .card-description {
+                font-size: 14px;
+            }
+            .read-more-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <center><h1>TOURISM</h1></center><hr>
+    <img src="imagessssss/premium_photo-1697730150275-dba1cfe8af9c.jpeg" height=700, width=2000>
+
+
+
+     <div class="card-container">
+        <div class="card twitter">
+            <div class="card-icon">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Hotels</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+            </div>
+            <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+
+        <div class="card instagram">
+            <div class="card-icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Places</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+            </div>
+            <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+
+        <div class="card youtube">
+            <div class="card-icon">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Restaurent</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+            </div>
+            <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
